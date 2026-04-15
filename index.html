@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parla Ay Işığı Gibi</title>
+<link rel="icon" type="image/png" href="çiçek.png">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 📌 SIDEBAR -->
+<div class="sidebar">
+  <button onclick="go(0)">🏠</button>
+  <button onclick="go(1)">💬</button>
+  <button onclick="go(2)">🎵</button>
+  <button onclick="go(3)">🎬</button>
+  <button onclick="go(4)">👥</button>
+</div>
+
+<!-- 📦 SLIDER -->
+<div class="sections" id="slider">
+
+  <!-- 🏠 HOME -->
+  <div class="section">
+    <div class="profile"></div>
+    <h1>Hep Parla ✨️🌙</h1>
+    
+  </div>
+
+  <!-- 💬 MESAJ -->
+  <div class="section">
+    <h1>Mesajlar</h1>
+    <div class="messages">
+      <div class="message">Merve</div>
+      <div class="message">Elif</div>
+      <div class="message">Yiğit</div>
+      <div class="message">Sultan</div>
+      <div class="message">Bahar</div>
+      <div class="message">Kenan</div>
+      <div class="message">Merve</div>
+      <div class="message">Azra</div>
+      <div class="message">Ceyda</div>
+    </div>
+  </div>
+
+  <!-- 🎵 MUSIC -->
+  <div class="section">
+    <div class="music">
+      <h1>Şarkı</h1>
+      <button onclick="toggleMusic()">Çal / Durdur</button>
+      <audio id="song" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+    </div>
+  </div>
+
+ <!-- 🎬 EDITLER -->
+<div class="section">
+    <h1>Editler ✨</h1>
+  
+   <!-- Video Edit Alanı -->
+  <div class="container">
+
+    <!-- Üstte 3 küçük video -->
+    <div class="row">
+      <div class="video-box"><video controls src="merveferos.mp4"></video></div>
+      <div class="video-box"><video controls src="elif.mp4"></video></div>
+      <div class="video-box"><video controls src="heyahfer.mp4"></video></div>
+    </div>
+
+    <!-- Ortada 1 büyük video -->
+    <div class="center-video">
+      <video controls src="orta.mp4"></video>
+    </div>
+
+    <!-- Altta 3 küçük video -->
+    <div class="row">
+      <div class="video-box"><video controls src="heyferide.mp4"></video></div>
+      <div class="video-box"><video controls src="bahar.mp4"></video></div>
+      <div class="video-box"><video controls src="alya.mp4"></video></div>
+    </div>
+  
+    </div>
+  </div>
+
+  <!-- 🤝 KATKI SAĞLAYANLAR -->
+<div class="section">
+    <h1>Katkı Sağlayanlar 🤝</h1>
+  
+    <div class="contributors">
+      <div class="contributor">Yiğit</div>
+      <div class="contributor">Merve</div>
+      <div class="contributor">Bahar</div>
+      <div class="contributor">Elif</div>
+      <div class="contributor">Kenan</div>
+      <div class="contributor">Merve</div>
+      <div class="contributor">Azra</div>
+      <div class="contributor">Ceyda</div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</div>
+</body>
+</head>
