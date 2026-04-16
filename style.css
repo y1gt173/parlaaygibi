@@ -6,8 +6,8 @@
   }
   
   body {
-    background: radial-gradient(circle at top, #0f0f1a, #05050a);
-    color: white;
+    background: radial-gradient(circle at top, #dfe6e9, #faf6f698);
+    color: rgb(75, 141, 167);
     overflow: hidden;
   }
   
@@ -22,13 +22,13 @@
   }
   
   body::before {
-    background: #61034e;
+    background: #0fbfd6;
     top: -100px;
     left: -100px;
   }
   
   body::after {
-    background: #1b2792fa;
+    background: #5496b9fa;
     bottom: -100px;
     right: -100px;
   }
@@ -46,7 +46,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 25px;
-    border-right: 1px solid #ff00cc33;
+    border-right: 1px solid #01e1f1f1;
     z-index: 10;
   }
   
@@ -64,9 +64,9 @@
   
   .sidebar button:hover,
   .sidebar button.active {
-    background: #ff00cc22;
-    box-shadow: 0 0 15px #ff00cc;
-    color: #ff00cc;
+    background: #3eddf1ea;
+    box-shadow: 0 0 15px #032491;
+    color: #0a85cc;
     transform: scale(1.1);
   }
   
@@ -95,7 +95,7 @@
     height: 500px;
     border-radius: 50%;
     background: url('parla.jpg') center/cover;
-    box-shadow: 0 0 25px #ff00cc, 0 0 60px #ff00cc55;
+    box-shadow: 0 0 25px #05fdd4, 0 0 60px #00b7ff55;
     animation: float 4s ease-in-out infinite;
   }
   
@@ -114,7 +114,7 @@
   .message {
     padding: 12px 15px;
     background: rgba(255,255,255,0.05);
-    border-left: 3px solid #ff00cc;
+    border-left: 3px solid #1604b3;
     border-radius: 10px;
   }
   
@@ -131,7 +131,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(45deg,#ff00cc,#00ccff);
+    background: linear-gradient(45deg,#055e92,#00252e);
     color: white;
     cursor: pointer;
   }
@@ -186,11 +186,11 @@
     padding:15px 25px;
     background:rgba(255,255,255,0.05);
     border-radius:12px;
-    box-shadow:0 0 15px #ff00cc22;
+    box-shadow:0 0 15px #00e1ff22;
     transition:0.3s;
   }
   
   .contributor:hover{
     transform:scale(1.1);
-    box-shadow:0 0 20px #ff00cc;
+    box-shadow:0 0 20px #0b79e0;
   }
