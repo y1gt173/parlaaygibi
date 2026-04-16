@@ -22,13 +22,13 @@
   }
   
   body::before {
-    background: #ff00cc33;
+    background: #61034e;
     top: -100px;
     left: -100px;
   }
   
   body::after {
-    background: #00ccff33;
+    background: #1b2792fa;
     bottom: -100px;
     right: -100px;
   }
