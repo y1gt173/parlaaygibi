@@ -94,7 +94,7 @@
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background: url('https://i.imgur.com/2DhmtJ4.png') center/cover;
+    background: url('parla.jpg') center/cover;
     box-shadow: 0 0 25px #ff00cc, 0 0 60px #ff00cc55;
     animation: float 4s ease-in-out infinite;
   }
