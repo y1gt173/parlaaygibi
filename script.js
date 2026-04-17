@@ -19,3 +19,28 @@ function toggleMusic(){
   let song = document.getElementById("song");
   song.paused ? song.play() : song.pause();
 }
+
+const box = document.getElementById("box");
+const text = box.dataset.text;
+
+let i = 0;
+
+function typeWriter(){
+  if(i < text.length){
+    box.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 60);
+  } else {
+    box.classList.remove("cursor");
+  }
+}
+
+// sadece 🌙 sayfasına gelince başlat
+function go(index){
+  document.getElementById("slider").style.transform = `translateX(-${index * 100}vw)`;
+
+  if(index === 5){
+    box.innerHTML = "";
+    i = 0;
+    typeWriter();
+  }
