@@ -44,3 +44,4 @@ function go(index){
     i = 0;
     typeWriter();
   }
+}
