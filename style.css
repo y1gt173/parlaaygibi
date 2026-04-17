@@ -194,3 +194,37 @@
     transform:scale(1.1);
     box-shadow:0 0 20px #0b79e0;
   }
+
+ body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f7f4f4;
+    font-family:Arial;
+  }
+  
+  /* glow kutu */
+  .box{
+    width:340px;
+    min-height:60px;
+    padding:16px;
+    border-radius:14px;
+    border:2px solid #00f5ff;
+    background:#111;
+    color:white;
+    font-size:16px;
+    text-align:center;
+  
+    box-shadow: 0 0 10px #00f5ff,
+                0 0 25px #00f5ff55;
+    transition:0.3s;
+  }
+  
+  /* hover glow artışı */
+  .box:hover{
+    box-shadow: 0 0 15px #00f5ff,
+                0 0 40px #00f5ff,
+                0 0 70px #00f5ff33;
+  }
