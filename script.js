@@ -2,27 +2,34 @@ let current = 0;
 const slider = document.getElementById("slider");
 const total = document.querySelectorAll(".section").length;
 
-function go(i){
-  current = i;
-  slider.style.transform = `translateX(-${i * 100}vw)`;
+function go(index){
+  current = index;
+  slider.style.transform = `translateX(-${index * 100}vw)`;
   updateSidebar();
+
+  // 🌙 özel sayfa (5. index)
+  if(index === 5){
+    box.innerHTML = "";
+    i = 0;
+    typeWriter();
+  }
 }
 
 function updateSidebar(){
   document.querySelectorAll(".sidebar button").forEach((b,i)=>{
-    b.classList.toggle("active", i===current);
+    b.classList.toggle("active", i === current);
   });
 }
 
-/* 🔁 MUSIC */
+/* MUSIC */
 function toggleMusic(){
   let song = document.getElementById("song");
   song.paused ? song.play() : song.pause();
 }
 
+/* TYPEWRITER */
 const box = document.getElementById("box");
 const text = box.dataset.text;
-
 let i = 0;
 
 function typeWriter(){
@@ -32,16 +39,5 @@ function typeWriter(){
     setTimeout(typeWriter, 60);
   } else {
     box.classList.remove("cursor");
-  }
-}
-
-// sadece 🌙 sayfasına gelince başlat
-function go(index){
-  document.getElementById("slider").style.transform = `translateX(-${index * 100}vw)`;
-
-  if(index === 5){
-    box.innerHTML = "";
-    i = 0;
-    typeWriter();
   }
 }
