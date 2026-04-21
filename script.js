@@ -41,3 +41,7 @@ function typeWriter(){
     box.classList.remove("cursor");
   }
 }
+
+function toggleSurprise(){
+  document.getElementById("surprise").classList.toggle("show");
+}
