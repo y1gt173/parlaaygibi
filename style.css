@@ -228,3 +228,43 @@
                 0 0 40px #00f5ff,
                 0 0 70px #00f5ff33;
   }
+
+
+/* BUTON */
+.surprise-btn{
+  padding:15px 25px;
+  font-size:16px;
+  background:#ff4d6d;
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.surprise-btn:hover{
+  transform:scale(1.1);
+  background:#ff1e4d;
+}
+
+/* İÇERİK */
+.surprise-content{
+  margin-top:30px;
+  text-align:center;
+  opacity:0;
+  max-height:0;
+  overflow:hidden;
+  transition:0.5s;
+}
+
+.surprise-content img{
+  width:300px;
+  border-radius:15px;
+  margin-bottom:10px;
+}
+
+/* AÇILINCA */
+.surprise-content.show{
+  opacity:1;
+  max-height:500px;
+}
